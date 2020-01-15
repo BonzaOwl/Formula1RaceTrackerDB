@@ -67,6 +67,7 @@
     <Folder Include="GetData\" />
     <Folder Include="GetData\Stored Procedures\" />
     <Folder Include="dbo\Views" />
+    <Folder Include="DataScripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Ref\Tables\RaceDates.sql" />
@@ -92,5 +93,12 @@
     <Build Include="Security\Ref.sql" />
     <Build Include="dbo\Views\vw_View_Race_Results_Detailed.sql" />
     <Build Include="dbo\Views\vw_Get_Driver_Team.sql" />
+    <None Include="DataScripts\Circuit.sql" />
+    <None Include="DataScripts\Driver_Team.sql" />
+    <None Include="DataScripts\Drivers.sql" />
+    <None Include="DataScripts\Race_Dates.sql" />
+    <None Include="DataScripts\Race_Types.sql" />
+    <None Include="DataScripts\Team_Engine.sql" />
+    <None Include="DataScripts\Teams.sql" />
   </ItemGroup>
 </Project>
