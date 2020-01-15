@@ -10,10 +10,10 @@ SELECT
 	DT.Start_date,
 	DT.End_date 
 FROM 
-	Driver_Team DT 
+	[dbo].[Driver_Team] DT 
 
-INNER JOIN Drivers D ON 
+INNER JOIN [dbo].[Drivers] D ON 
 	D.Driver_ID = DT.Driver_ID 
 	
-INNER JOIN Teams T ON 
+INNER JOIN [dbo].[Teams] T ON 
 	T.Team_ID = DT.Team_ID

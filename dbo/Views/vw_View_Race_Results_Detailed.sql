@@ -11,15 +11,15 @@ T.Team_Name,
 C.Circuit_Name,
 R.Final_Position
 
-FROM Race R
+FROM [dbo].[Race] R
 
-INNER JOIN Drivers D ON 
-D.Driver_ID = R.Driver_ID
+INNER JOIN [dbo].[Drivers] D ON 
+	D.Driver_ID = R.Driver_ID
 
-INNER JOIN Teams T ON
-T.Team_ID = R.Team_ID
+INNER JOIN [dbo].[Teams] T ON
+	T.Team_ID = R.Team_ID
 
-INNER JOIN Circuit C ON
-C.Circuit_ID = R.Circuit_ID
+INNER JOIN [dbo].[Circuit] C ON
+	C.Circuit_ID = R.Circuit_ID
 
 --WHERE C.Circuit_Name = 'Silverstone' AND D.Forename = 'Lewis'
