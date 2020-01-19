@@ -1,0 +1,27 @@
+﻿CREATE PROCEDURE dbo.Retire_Driver
+
+@Driver_ID INT 
+
+AS
+
+BEGIN
+
+	BEGIN TRY
+
+		BEGIN TRANSACTION
+
+		UPDATE 
+			dbo.Drivers
+		SET Retired = 1
+		WHERE
+			Driver_ID = @Driver_ID
+
+		COMMIT TRANSACTION
+
+	END TRY
+
+	BEGIN CATCH
+	ROLLBACK TRANSACTION
+	END CATCH
+
+END

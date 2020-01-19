@@ -27,9 +27,17 @@ AS
 
 BEGIN
 	
-	SELECT 
-		C.Circuit_ID,
-		C.Grands_Prix_Name as Circuit_Name
+	SELECT 		 
+	   [Circuit_ID]
+      ,[Circuit_Name]
+      ,[Circuit_Type]
+      ,[Direction]
+      ,[Circuit_Location]
+      ,[Last_length_used]
+      ,[Grands_Prix_Name]
+      ,[Start_date]
+      ,[End_date]
+      ,[Rank]
 	FROM
 		[dbo].[Circuit] C
 	ORDER BY [Rank]

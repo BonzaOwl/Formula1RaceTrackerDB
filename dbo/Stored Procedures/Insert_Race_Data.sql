@@ -48,9 +48,7 @@ BEGIN
 
         BEGIN TRANSACTION
 
-		EXEC @Team_ID = [dbo].[Get_Team_ID] @Driver_ID = @Driver_ID, @Team_ID = @Team_ID OUTPUT
-
-		SET @Team_ID = @Team_ID
+		EXEC [dbo].[Get_Team_ID] @Driver_ID = @Driver_ID, @Team_ID = @Team_ID OUTPUT
 
         INSERT INTO [dbo].[Race]
         (

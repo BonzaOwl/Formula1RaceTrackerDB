@@ -29,6 +29,7 @@ BEGIN
 
 SELECT TOP 1
 
+C.Grands_Prix_Name,
 C.Circuit_Name,
 RD.Race_Date
 
