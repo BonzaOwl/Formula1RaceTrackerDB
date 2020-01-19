@@ -1,4 +1,27 @@
-﻿CREATE PROCEDURE [dbo].[Driver_Check]
+﻿/*******************************************************************************************************
+Procedure: [dbo].[Driver_Check]
+Create Date: 12/01/2020
+Author: Bonza Owl
+Description: This stored procedure returns a integer value depending on the existance of the submitted 
+driver. 
+
+Called By: PopulateDropDown
+Affected Table(s): [dbo].[Drivers], [dbo].[Driver_Team], [dbo].[Country]
+
+Used By: FormulaOneRaceWebApp
+Parameters: 
+
+
+********************************************************************************************************
+** Change History
+********************************************************************************************************
+
+** PR	Date (yyyy-mm-dd)		Author			Description
+** --	-----------------		-----------		--------------------------------------------------------
+** 1
+********************************************************************************************************/
+
+CREATE PROCEDURE [dbo].[Driver_Check]
 
 @Forename nvarchar(50),
 @Surname nvarchar(50),
@@ -21,7 +44,7 @@ BEGIN
 		FROM 
 			[dbo].[Drivers] D
 
-			INNER JOIN Driver_Team DT ON DT.Driver_ID = D.Driver_ID
+			INNER JOIN [dbo].[Driver_Team] DT ON DT.Driver_ID = D.Driver_ID
 
 			INNER JOIN [dbo].Country C ON C.Country_ID = D.Country_ID
 

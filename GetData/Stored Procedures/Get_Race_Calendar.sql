@@ -1,4 +1,27 @@
-﻿CREATE PROCEDURE [GetData].[Get_Race_Calendar]
+﻿/*******************************************************************************************************
+Procedure: [GetData].[Get_Race_Calendar]
+Create Date: 12/01/2020
+Author: Bonza Owl
+Description: This stored procedure returns all currently active race dates 
+proceure. 
+
+Called By: LoadRaceDates
+Affected Table(s): [Ref].[RaceDates], [dbo].[Race_Types], [dbo].Circuit]
+
+Used By: FormulaOneRaceWebApp
+Parameters: 
+
+
+********************************************************************************************************
+** Change History
+********************************************************************************************************
+
+** PR	Date (yyyy-mm-dd)		Author			Description
+** --	-----------------		-----------		--------------------------------------------------------
+** 1
+********************************************************************************************************/
+
+CREATE PROCEDURE [GetData].[Get_Race_Calendar]
 
 AS
 

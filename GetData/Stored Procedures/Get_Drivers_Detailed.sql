@@ -1,4 +1,27 @@
-﻿CREATE PROCEDURE [GetData].[Get_Drivers_Detailed]
+﻿/*******************************************************************************************************
+Procedure: [GetData].[Get_Drivers_Detailed]
+Create Date: 12/01/2020
+Author: Bonza Owl
+Description: This stored procedure returns detailed information about the drivers
+proceure. 
+
+Called By: LoadDrivers
+Affected Table(s): dbo.Drivers, dbo.Country, dbo.Driver_Team, dbo.Teams
+
+Used By: FormulaOneRaceWebApp
+Parameters: 
+
+
+********************************************************************************************************
+** Change History
+********************************************************************************************************
+
+** PR	Date (yyyy-mm-dd)		Author			Description
+** --	-----------------		-----------		--------------------------------------------------------
+** 1
+********************************************************************************************************/
+
+CREATE PROCEDURE [GetData].[Get_Drivers_Detailed]
 
 AS
 
