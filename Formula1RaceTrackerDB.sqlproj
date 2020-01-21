@@ -91,7 +91,7 @@
     <Build Include="dbo\Stored Procedures\Get_Team_ID.sql" />
     <Build Include="Security\GetData.sql" />
     <Build Include="Security\Ref.sql" />
-    <Build Include="dbo\Views\vw_View_Race_Results_Detailed.sql" />
+    <Build Include="dbo\Views\vw_Race_Results_Detailed.sql" />
     <Build Include="dbo\Views\vw_Get_Driver_Team.sql" />
     <None Include="DataScripts\Circuit.sql" />
     <None Include="DataScripts\Driver_Team.sql" />
@@ -110,8 +110,16 @@
     <Build Include="GetData\Stored Procedures\Get_Race_Calendar.sql" />
     <Build Include="GetData\Stored Procedures\Get_Driver_Details.sql" />
     <Build Include="dbo\Stored Procedures\Update_Driver.sql" />
+    <Build Include="dbo\Views\vw_Circuit_Info_Detailed.sql" />
+    <Build Include="dbo\Tables\City.sql" />
+    <Build Include="Ref\Tables\Circuit_Directions.sql" />
+    <Build Include="Ref\Tables\Circuit_Types.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Formula1RaceTrackerDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataScripts\City.sql" />
+    <None Include="DataScripts\Country.sql" />
   </ItemGroup>
 </Project>
