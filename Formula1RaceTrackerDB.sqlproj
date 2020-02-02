@@ -114,6 +114,10 @@
     <Build Include="dbo\Tables\City.sql" />
     <Build Include="Ref\Tables\Circuit_Directions.sql" />
     <Build Include="Ref\Tables\Circuit_Types.sql" />
+    <Build Include="dbo\Stored Procedures\City_Check.sql" />
+    <Build Include="GetData\Stored Procedures\Get_Circuit_Details.sql" />
+    <Build Include="GetData\Stored Procedures\Get_Country.sql" />
+    <Build Include="GetData\Stored Procedures\Circuit_Types.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Formula1RaceTrackerDB.refactorlog" />

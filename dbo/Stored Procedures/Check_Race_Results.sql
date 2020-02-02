@@ -51,7 +51,8 @@ BEGIN
 			Driver_ID = @Driver_ID
 			AND Race_Date = @Race_Date
 			AND Race_Type = @Race_Type
-			AND Circuit_ID = @Circuit_ID		
+			AND Circuit_ID = @Circuit_ID	
+			AND YEAR(Date_Submitted) = YEAR(GETDATE())
 
 		IF @Cnt >= 1 SET @State = 1		
 
