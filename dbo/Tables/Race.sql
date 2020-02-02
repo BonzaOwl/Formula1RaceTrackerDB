@@ -7,6 +7,7 @@
     [Final_Position] TINYINT  NULL,
     [Points]         TINYINT  NULL,
     [Race_Type]      TINYINT  NULL,
+    [Date_Submitted] DATETIME NOT NULL, 
     CONSTRAINT [PK_Race_ID] PRIMARY KEY CLUSTERED ([Race_ID] ASC),
     CONSTRAINT [FK_Race_CircuitID] FOREIGN KEY ([Circuit_ID]) REFERENCES [dbo].[Circuit] ([Circuit_ID]),
     CONSTRAINT [FK_Race_DriveID] FOREIGN KEY ([Driver_ID]) REFERENCES [dbo].[Drivers] ([Driver_ID]),

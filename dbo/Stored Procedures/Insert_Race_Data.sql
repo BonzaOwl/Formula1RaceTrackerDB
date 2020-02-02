@@ -58,7 +58,8 @@ BEGIN
         Circuit_ID,    
         Final_Position,
         Race_Type,
-		Points
+		Points,
+        Date_Submitted
         )
         VALUES
         (
@@ -68,7 +69,8 @@ BEGIN
             @Circuit_ID,
             @Final_Position,
             @Race_Type,
-			@Points
+			@Points,
+            GETDATE()
         );
 
         COMMIT TRANSACTION;
